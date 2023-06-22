@@ -1,0 +1,115 @@
+:root{
+  /*About us*/
+  --title-font-size: min(4.5vw, 1.6rem);
+  --description-font-size:min(3.7vw, 1.2rem);
+  --Safari-Line-Heigth: min(6.5vw,2.1rem);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Anton', sans-serif;
+}
+
+
+
+main{
+  position: relative;
+}
+
+.temporalImagesBox{
+  color:#fff;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(84, 59, 59);
+  z-index: 3;
+}
+.temporalImagesBox2{
+  color:#fff;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(39, 42, 67);
+  z-index: 3;
+}
+
+
+
+/* global scrollbar ---- */
+
+::-webkit-scrollbar {
+  width: 1.4em;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a0;
+}
+
+/* scrollbar in Firefox */
+html {
+  scrollbar-width: 0.7em;
+  scrollbar-color: #b7b7b7 #888;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #b7b7b7;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+.Empty1__main{
+  position: relative;
+  z-index: 5;
+  height: 50vh;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.AboutMeContainer__main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  height: 200vh;
+  /* background-color: #8888884c; */
+}
+
+.stackContainer__main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  height: 200vh;
+  /* background-color: #8888884c; */
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+}

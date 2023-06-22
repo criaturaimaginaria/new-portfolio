@@ -1,0 +1,87 @@
+.AboutMe{
+    position: relative;
+    /* z-index: 2; */    
+    height: 100%;
+    bottom: 0px;
+}
+
+.AboutMe__space{
+    height: 40vh;
+    width: 100%;
+}
+
+.AboutMe__textbox{
+    width: 85vw;
+    margin-top: 2.5vw;
+    max-width: 85em;
+    padding-top: 2vw;
+}
+
+.AboutMe__textbox p{
+    width: 94%;
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+    font-size: min(1.5vw, 1.5em);
+    text-align: left;
+}
+
+.AboutMe__textbox p a{
+    color: #fff;
+}
+
+.AboutMe__circle{
+    position: relative;
+    display: flex;
+    float: left;
+    width: 15vw;
+    height: 15vw;
+    margin: 2vw;
+    shape-outside: circle();
+    clip-path: circle();
+    /* background: lightblue; */
+}
+
+.AboutMe__circle img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ----/////----phone Home ----/////---- */
+
+@media (max-width: 640px) {
+    .about__title{
+        font-size: 7vw;
+        font-size: min(7.5vw, 7.5em);
+    }
+
+    .AboutMe__textbox{
+        width: 85vw;
+        margin-top: 3vw;
+        max-width: 85em;
+        padding-top: 2vw;
+    }
+    
+    .AboutMe__textbox p{
+        width: 94%;
+        margin-top: 4.5vw;
+        font-size: 1.5vw;
+        font-size: min(3.7vw, 3.7em);
+    }
+    
+    .AboutMe__textbox p a{
+        color: #fff;
+    }
+    
+    .AboutMe__circle{
+        position: relative;
+        display: flex;
+        float: left;
+        width: 22vw;
+        height: 22vw;
+        margin: 4vw;
+    }
+    
+}
+
+

@@ -1,0 +1,142 @@
+.Home{
+    position: sticky;
+    z-index: 2;
+}
+
+.Home__Space{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: aqua; */
+    z-index: 10;
+}
+
+.Home__Space__text1{
+    font-family:NoeDisplayRegular ;
+    z-index: 4;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.Home__Space__text2{
+    display: flex;
+    justify-content: center;
+    font-family:DJRDeck ;
+    letter-spacing: 0.19vw;
+    z-index: 4;
+    font-size: 1.5vw;
+}
+
+.Home__line{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.542);
+    width: 2px;
+    height: 8em;
+    bottom: 12%;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+
+.Home__logo{
+    width: 30vw;
+    max-width: 30em;
+    margin-bottom: 10vw;
+    margin-left: -25vw;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+.home__instruction{
+    opacity: 1;
+    transition: 1s;
+}
+.home__instruction-hidden{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+/* ----/////----phone Home ----/////---- */
+
+@media (max-width: 640px) {
+    .Home__logo{
+        margin-left: -10vw;
+        width: 85vw;
+        max-width: 85em;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    .home__instruction{
+        margin-left: -10vw;
+    }
+    .home__instruction-hidden{
+        margin-left: -10vw;
+    }
+
+
+    .Home__Space{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        /* background-color: aqua; */
+        z-index: 10;
+    }
+
+
+    .Home__Space__txtContainer{
+        z-index: 4;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20%;
+        /* background-color: rgb(102, 255, 0); */
+        width: 80vw;
+    }
+
+    .Home__Space__text1{
+        
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10vw;
+        width: 50vw;
+        font-size: min(7.5vw, 7.5em);
+    }
+    
+    
+    .Home__Space__text2{
+        line-height: 7vw;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        font-size: min(4.5vw, 4.5em);
+    }
+
+    .Home__line{
+        height: 10em;
+        bottom: 18%;
+    }
+}
+
+

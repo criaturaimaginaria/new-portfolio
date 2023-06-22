@@ -1,0 +1,156 @@
+.ThankYou{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.thankYou__img{
+    width: 20vw;
+    height: 20vw;
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
+.thankYou__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.ThankYou p{
+    text-align: center;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1vw;
+}
+
+.thankyou__button{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 4vw;
+    position: relative;
+    padding: 0.2vw;
+    margin-top: 0.2vw;
+}
+
+.ThankYou button{
+    position: absolute;
+    background-color: #fff;
+    border-left: 1px solid black;
+    border-right: 0px solid black;
+    border-top: 0px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    font-size: min(1.1vw, 1.1em);
+    transition: 0.3s;
+}
+.ThankYou button a{
+    color: black;
+    text-decoration: none;
+}
+
+.ThankYou button:hover{
+    background-color: #972fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.ThankYou button:hover a{
+    color: #fff;
+}
+
+.thankYou__top{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: #972fff;
+    height: 2vw;
+    z-index: 5;
+    filter: blur(8vw);
+}
+.thankYou__bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #972fff;
+    height: 2vw;
+    z-index: 5;
+    filter: blur(8vw);
+}
+.thankYou__right{
+    position: absolute;
+    right: 0px;
+    width: 2vw;
+    background-color: #972fff;
+    height: 100%;
+    z-index: 5;
+    filter: blur(8vw);
+}
+.thankYou__left{
+    position: absolute;
+    left: 0px;
+    width: 2vw;
+    background-color: #972fff;
+    height: 100%;
+    z-index: 5;
+    filter: blur(8vw);
+}
+
+
+/* ----/////----phone Home ----/////---- */
+
+@media (max-width: 640px) {
+
+    .thankYou__img{
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .ThankYou p{
+        width: 70vw;
+        margin: 3vw;
+    }
+
+    .ThankYou button a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .ThankYou button{
+        position: absolute;
+        background-color: #972fff;
+        border-left: 1px solid #fff;
+        border-right: 0px solid #fff;
+        border-top: 0px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-radius: 3.3vw;
+        padding: 2.2vw;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        font-size: min(4vw, 4em);
+        transition: 0.3s;
+    }
+
+
+}

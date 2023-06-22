@@ -1,0 +1,244 @@
+#contactForm{
+    height: 55vh;
+}
+
+form {
+    /* background-color: aqua; */
+    overflow: hidden;
+    z-index: 60;
+    width: 60vw;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inp1{
+    height: 1.5em;
+    width: 98%;
+    outline: none;
+    border-style: hidden hidden hidden hidden;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-size: min(1.8vw, 1.8em);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+.inp1:focus{
+    border-bottom: 1px solid #a60feb;
+    transition: 0.5s;
+}
+
+
+#ch {
+ padding-left:0.5em;
+ padding-top:0.3em;
+}
+
+
+.inp2{
+    height: 1.5em;
+    width: 98%;
+    outline: none;
+    border-style: hidden hidden hidden hidden;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-size: min(1.8vw, 1.8em);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+.inp2:focus{
+    border-bottom: 1px solid #a60feb;
+    transition: 0.5s;
+}
+
+
+.inp4{
+    width: 98%;
+    height: 5em;
+    /* resize: none; */
+    outline: none;
+    border-style: hidden hidden hidden hidden;
+    /* margin-top: 0.5em; */
+    font-size: 1.5em;
+    font-size: min(1.8vw, 1.8em);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+.inp4:focus{
+    border-bottom: 1px solid #a60feb;
+    transition: 0.5s;
+}
+
+
+#message{
+    padding-left:0.5em;
+    margin-top: 0.5em;
+}
+
+/* .form_button{
+    font-family: ralewayMedium;
+    width:fit-content ;
+    margin: 1em auto 0em auto ;
+}
+
+.form_button button{
+    background-color: #086FFD;
+    border-style: none;
+    color: rgb(222, 222, 222);
+    font-size: 1.2em;
+    padding: 0.1em 0.7em 0.1em 0.7em;
+}
+
+.form_button button:hover{
+    background-color: #2f86ff;
+} */
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0em;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+/* //////////////////////////////// */
+
+
+
+.sented{
+    font-family: ralewayMedium;
+    width:fit-content ;
+    margin: 1em auto 0em auto ;
+    transition:  0.6s;
+    height: 4vw;
+}
+
+.sented button{
+    background-color: #086FFD;
+    border-style: none;
+    color: rgb(222, 222, 222);
+    font-size: 1.3em;
+    font-size: min(1.3vw, 1.3em);
+    padding: 0.3em 1.3em 0.3em 1.3em;
+    transition:  0.3s;
+}
+
+.sented button:hover{
+    background-color: #2f86ff;
+    cursor: pointer;
+}
+
+.noSent{
+    font-family: ralewayMedium;
+    width:fit-content ;
+    margin: 1em auto 0em auto ;
+    transition:  0.3s;
+    filter: blur(0.8vw);
+    height: 4vw;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.noSent button{
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    padding: 0.1em 0.7em 0.1em 0.7em;
+    transition:  0.6s;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* phone */
+@media screen and (max-width: 640px) {
+    #contactForm{
+        height: 65vh;
+    }
+
+
+    .inp1{
+        height: 1.5em;
+        width: 98%;
+        margin-top: 1.5em;
+        font-size: min(3.5vw, 3.5em);
+    }
+
+    
+    .inp2{
+        height: 1.5em;
+        width: 98%;
+        margin-top: 0.5em;
+        font-size: min(3.5vw, 3.5em);
+    }
+
+    .inp4{
+        width: 98%;
+        height: 5em;
+        font-size: min(3.5vw, 3.5em);
+    }
+
+
+
+
+
+
+
+
+
+    .sented{
+        width:fit-content ;
+        margin: 1em auto 0em auto ;
+        transition:  0.6s;
+        height: 10vw;
+    }
+    
+    .sented button{
+        color: rgb(222, 222, 222);
+        font-size: 1.3em;
+        font-size: min(3.3vw, 3.3em);
+        padding: 0.5em 1.5em 0.5em 1.5em;
+    }
+    .noSent{
+        margin: 1em auto 0em auto ;
+        height: 10vw;
+    }
+    
+    .noSent button{
+        font-size: 1.2em;
+        padding: 0.3em 0.8em 0.3em 0.8em;
+    }
+    
+    
+    
+    
+}

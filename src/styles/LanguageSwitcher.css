@@ -1,0 +1,52 @@
+.languajeContainer{
+    /* background-color: blue; */
+}
+
+.languageTrue{
+    background-color: rgba(0, 0, 255, 0);
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3vw;
+    margin-right: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: underline;
+    text-underline-offset: 3px; 
+}
+
+.languageFalse{
+    background-color: rgba(0, 0, 255, 0);
+    font-weight: 000;
+    font-size: 1.3vw;
+    margin-right: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.languageTrue:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px; 
+}
+
+.languageFalse:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 3px; 
+}
+
+@media screen and (max-width: 650px) {
+
+    .languageTrue{
+        font-size: min(4vw, 4em);
+        margin-right: 2.5vw;
+    }
+    
+    .languageFalse{
+        font-size: min(4vw, 4em);
+        margin-right: 2.5vw;
+    }
+    
+
+}

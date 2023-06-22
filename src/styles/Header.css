@@ -1,0 +1,387 @@
+#Header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2vw;
+  width: 100%;
+  height: 5vw;
+  max-height: 5em;
+  max-height: 6em;
+  /* position: absolute; */
+  z-index: 5;
+  /* top: 0; */
+  color: black;
+}
+
+.Header__box1 {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Header__logo {
+  position: relative;
+  margin: 0 5vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.Hola2 {
+  position: relative;
+  width: 5rem;
+  height: 2rem;
+}
+.Hola {
+  object-fit: fill;
+}
+
+.Header__box2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Header__box2 ul {
+  display: flex;
+  margin-top: auto;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.Header__box2 ul li {
+  margin-right: 4vw;
+  list-style: none;
+}
+
+.Header__box2 ul li a {
+  font-family: NoeDisplayRegular;
+  font-size: 1.5vw;
+  color: black;
+  text-decoration: none;
+  line-height: 0.85;
+}
+
+.Header__box2 ul li a:hover {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  line-height: 0.85;
+  /* color: rgba(0, 0, 0, 0.807); */
+  /* text-decoration: underline; */
+}
+
+.mobileMenu__firsts {
+  color: #fff;
+  font-size: 1.5vw;
+  margin-top: -0.3vw;
+  user-select: none;
+}
+
+.Header p {
+  color: black;
+  margin-top: auto;
+}
+
+.Header__chevron {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu-active {
+  display: none;
+}
+
+/* ----/////----phone header ----/////---- */
+
+@media (max-width: 640px) {
+  #Header {
+    height: 12vw;
+    max-height: 12em;
+    height: 100vh;
+    /* background-color: aqua; */
+    z-index: 1001;
+  }
+  .Header__logo {
+    
+  }
+
+  .Header__box1 {
+    width: 80%;
+  }
+  
+
+  .mobileMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 100vw;
+    /* background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 255, 0.561); */
+    transition: 1s;
+    animation: 1.6s HiddenMenu ease-in-out;
+    z-index: -1 ease-in-out;
+  }
+
+  @keyframes HiddenMenu {
+    0% {
+      background-color: #1d1d1b;
+      margin-left: 0vw;
+    }
+    30% {
+      margin-left: 0vw;
+      background-color: #1d1d1b;
+    }
+    65% {
+      background-color: #1d1d1b00;
+      margin-left: 0vw;
+    }
+    85% {
+      background-color: #1d1d1b00;
+      margin-left: 0vw;
+      margin-left: 100vw;
+      /* margin-left: 100vw; */
+      /* opacity: 0; */
+      opacity: 1;
+    }
+    100% {
+      margin-left: 100vw;
+      background-color: #1d1d1b00;
+      opacity: 0;
+    }
+  }
+
+  .mobileMenu-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.356); */
+    background-color: #1d1d1b;
+    /* transition: ; */
+    animation: 0.8s activeMenu ease-in-out;
+  }
+
+  @keyframes activeMenu {
+    0% {
+      background-color: #1d1d1b00;
+    }
+    30% {
+      background-color: #1d1d1b00;
+    }
+    40% {
+      background-color: #1d1d1b00;
+    }
+    100% {
+      background-color: #1d1d1b;
+    }
+  }
+
+  .mobileMenu-active ul {
+    text-decoration: none;
+    color: #fff;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .mobileMenu__firsts {
+    color: #ffce99;
+    font-size: 5.6vw;
+  }
+
+  .mobileMenu-active ul li {
+    list-style: none;
+    margin: 4.5vw;
+    animation: 1.3s ulText ease-in-out;
+  }
+
+  @keyframes ulText {
+    0% {
+      margin: 8vw;
+      color: #ffffff00;
+    }
+    30% {
+      /* color: #ffffff57; */
+    }
+    40% {
+    }
+    100% {
+      margin: 4.5vw;
+    }
+  }
+
+  .mobileMenu-active ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobileMenu ul {
+    text-decoration: none;
+    color: #fff;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .mobileMenu__firsts {
+    color: #a60feb;
+    font-size: 5.6vw;
+  }
+
+  .mobileMenu ul li {
+    list-style: none;
+    margin: 4.5vw;
+    animation: 1.3s ulTextInactive ease-in-out;
+  }
+
+  @keyframes ulTextInactive {
+    0% {
+      margin: 4.5vw;
+      opacity: 1;
+    }
+    45% {
+      /* color: #ffffff57; */
+      opacity: 0;
+    }
+    50% {
+      /* opacity: 1; */
+      opacity: 0;
+    }
+    100% {
+      margin: 4.5vw;
+      opacity: 0;
+    }
+  }
+
+  .mobileMenu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .Header__logo {
+
+    margin-top: auto;
+    margin-right: auto;
+    padding-left: 5vw;
+  }
+
+  .Header__box2 ul {
+    display: none;
+  }
+
+
+  /* -------- hamburguer button -------- */
+  .Header__chevron {
+    margin-top: 6vw;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 8vw;
+    height: 8vw;
+    z-index: 3;
+  }
+
+  .Header__chevron-active {
+    margin-top: 6vw;
+    margin-right: 4vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 8vw;
+    height: 8vw;
+    z-index: 3;
+  }
+
+  .chevron1 {
+    background-color: #fff;
+    width: 100%;
+    height: 1vw;
+  }
+  .chevron2 {
+    background-color: #fff;
+    width: 100%;
+    height: 1vw;
+    transition: 1.2s;
+  }
+  .chevron3 {
+    background-color: #fff;
+    width: 100%;
+    height: 1vw;
+  }
+
+  .chevron1-active {
+    background-color: #fff;
+    width: 100%;
+    height: 1vw;
+    position: absolute;
+    rotate: -130deg;
+    animation: 1.5s chevron1 ease-in-out;
+  }
+  @keyframes chevron1 {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: 0deg;
+      margin-left: 0%;
+    }
+    50% {
+      rotate: -90deg;
+      margin-right: -100%;
+    }
+    75% {
+      /* rotate: 120deg; */
+    }
+    100% {
+      rotate: -130deg;
+    }
+  }
+  .chevron2-active {
+    background-color: #ffffff00;
+    width: 100%;
+    height: 1vw;
+    transition: 1s ease-in-out;
+  }
+  .chevron3-active {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 1vw;
+    rotate: 130deg;
+    animation: 1.5s chevron3 ease-in-out;
+  }
+
+  @keyframes chevron3 {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: 0deg;
+      margin-left: 0%;
+    }
+    50% {
+      rotate: 90deg;
+      margin-left: -100%;
+    }
+    75% {
+      /* rotate: 120deg; */
+    }
+    100% {
+      rotate: 130deg;
+    }
+  }
+}
