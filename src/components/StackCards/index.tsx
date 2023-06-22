@@ -146,12 +146,12 @@ export const StackCards = () => {
                 <p>
                   {description[language].description} 
                   <u>
-                    <a href="https://www.yoorco.com/" target="_blank" style={{color:`black`, marginLeft:"4px"}}>
+                    <a href="https://www.yoorco.com/" target="_blank" rel="noreferrer" style={{color:`black`, marginLeft:"4px"}}>
                       Yoorco 
                     </a>
                   </u> {description[language].description2}
                    <u>
-                      <a href="https://www.youtube.com/@ElGentilhombre" target="_blank" style={{color:`black`, marginLeft:"4px"}}>
+                      <a href="https://www.youtube.com/@ElGentilhombre" target="_blank" rel="noreferrer" style={{color:`black`, marginLeft:"4px"}}>
                         El Gentil Hombre
                       </a>
                    </u>

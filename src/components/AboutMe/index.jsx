@@ -166,7 +166,7 @@ export const AboutMe = () => {
                       {translations[language].text3}
                     </p>
                     <p>
-                      {translations[language].text4} <a href="https://www.youtube.com/@criaturaimaginaria5230/featured" target="_blank"> YouTube :).</a>
+                      {translations[language].text4} <a href="https://www.youtube.com/@criaturaimaginaria5230/featured" target="_blank" rel="noreferrer"> YouTube :).</a>
                     </p>
                   </div>
                 </div>
