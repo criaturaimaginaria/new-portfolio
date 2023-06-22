@@ -144,21 +144,16 @@ export const AboutMe = () => {
                         filter:`blur(${Math.pow( percentage, 3.35) - 1}vw)`,
                       }}></div>
 
-                <p
+                <div
                   style={{
                     color: "#fff",
-                    // filter: `blur(${percentage - 1}vw)`,
-                    // filter: `blur(${Math.pow(percentage, 2) - 1}vw)`,
                     filter: ` ${
                       windowSize.width < 640
                         ? `blur(${Math.pow( percentage, 3.5) - 3}vw)`
                         : `blur(${0.8 - (Math.pow( percentage, 3.5) - 1)}vw)`
                     }`,
-                    // userSelect: "none",
                   }}
                 >
-                  {/* {console.log(Math.pow( percentage, 3.35) - 1, "blur --")} */}
-                  {/* <img className="Home__logo" src={logo}></img> */}
                   <p id="about__me" className="about__title">{translations[language].title}</p>
 
                   <div className="AboutMe__textbox">
@@ -174,7 +169,7 @@ export const AboutMe = () => {
                       {translations[language].text4} <a href="https://www.youtube.com/@criaturaimaginaria5230/featured" target="_blank"> YouTube :).</a>
                     </p>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           );
