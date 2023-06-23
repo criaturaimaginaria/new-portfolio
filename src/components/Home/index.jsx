@@ -102,10 +102,15 @@ const translations = {
                     // filter: `blur(${Math.pow(percentage, 2) - 1}vw)`,
                     filter: ` ${
                       windowSize.width < 640
-                        ? `blur(${Math.pow(percentage, 5) - 1}vw)`
+                        ? `blur(${Math.pow( percentage, 4) - 1}vw)`
                         : `blur(${Math.pow(percentage, 3.5) - 1}vw)`
                     }`,
                     userSelect: "none",
+                    opacity: ` ${
+                      windowSize.width < 640
+                        ? `${0.8 - (Math.pow( percentage, 1) - 1)}`
+                        : `${1}`
+                    }`,
                   }}
                 >
                   <img className="Home__logo" src={logo}></img>
