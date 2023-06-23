@@ -119,22 +119,15 @@ export const AboutMe = () => {
               <div style={insideStyles}>
                 <div className="aboutMe__diskBack" style={{
                         position: 'absolute',
-                        top: 0,
+                        bottom: 0,
                         left: 0,
                         width: '100%',
                         // height: '100%',
                         height: ` ${
                           windowSize.width < 640
-                            ? `160vw`
+                            ? `100vh`
                             : `100%`
                         }`,
-                        backgroundSize:"contain",
-                        // background:"red",
-                        // backgroundImage: ` ${
-                        //   windowSize.width < 640
-                        //     ? `url(/images/disk2mobile.png)`
-                        //     : `url(/images/disk2.png)`
-                        // }`,
                         backgroundAttachment: 'fixed',
                         backgroundRepeat: 'no-repeat',
                         // backgroundSize: ` ${
