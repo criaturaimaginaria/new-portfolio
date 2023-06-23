@@ -117,24 +117,24 @@ export const AboutMe = () => {
               <div className="AboutMe__space">
               </div>
               <div style={insideStyles}>
-                <div style={{
+                <div className="aboutMe__diskBack" style={{
                         position: 'absolute',
                         top: 0,
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        backgroundImage: ` ${
-                          windowSize.width < 640
-                            ? `url(/images/disk2mobile.png)`
-                            : `url(/images/disk2.png)`
-                        }`,
+                        // backgroundImage: ` ${
+                        //   windowSize.width < 640
+                        //     ? `url(/images/disk2mobile.png)`
+                        //     : `url(/images/disk2.png)`
+                        // }`,
                         backgroundAttachment: 'fixed',
                         backgroundRepeat: 'no-repeat',
-                        backgroundSize: ` ${
-                          windowSize.width < 640
-                            ? `100% 100%`
-                            : `cover`
-                        }`,
+                        // backgroundSize: ` ${
+                        //   windowSize.width < 640
+                        //     ? `100% 100%`
+                        //     : `cover`
+                        // }`,
                         opacity: ` ${
                           windowSize.width < 640
                             ? `${0.8 - (Math.pow( percentage, 1.7) - 1)}`
