@@ -123,6 +123,11 @@ export const AboutMe = () => {
                         left: 0,
                         width: '100%',
                         height: '100%',
+                        height: ` ${
+                          windowSize.width < 640
+                            ? `10%`
+                            : `100%`
+                        }`,
                         // backgroundImage: ` ${
                         //   windowSize.width < 640
                         //     ? `url(/images/disk2mobile.png)`

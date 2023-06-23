@@ -89,8 +89,6 @@
 
 
 
-
-
 @media (max-width: 640px) {
     .aboutMe__diskBack {
       background-image: url(/images/disk2mobile.png);
@@ -130,6 +128,8 @@
     }
 
   }
+
+
 
   @media (min-width: 641px) {
     .aboutMe__diskBack {
