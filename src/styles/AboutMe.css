@@ -95,14 +95,14 @@
     .aboutMe__diskBack {
       background-image: url(/images/disk2mobile.png);
       background-size: 100% 100%;
-      height: 100vh;
+      /* height: 100vh; */
       position: 'absolute';
       background-repeat: 'no-repeat';
       background-attachment: local;
       top: 0;
       left: 0;
       width: '100%';
-      height: '100%';
+      height: '10%';
     }
 
     .aboutMe__diskMobile{
@@ -125,18 +125,10 @@
       background-attachment: local;
       top: 0;
       left: 0;
-      /* width: '100%';
-      height: '100%'; */
+      width: '100%';
+      height: '10%';
     }
 
-    .aboutMe__diskMobile{
-        display: flex;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
   }
 
   @media (min-width: 641px) {
