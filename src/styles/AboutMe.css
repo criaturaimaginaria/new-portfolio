@@ -47,6 +47,9 @@
     width: 100%;
 }
 
+
+
+
 /* ----/////----phone Home ----/////---- */
 
 @media (max-width: 640px) {
@@ -93,6 +96,11 @@
       background-image: url(/images/disk2mobile.png);
       background-size: 100% 100%;
       height: 100vh;
+      position: 'absolute';
+      top: 0;
+      left: 0;
+      width: '100%';
+      height: '100%';
     }
   }
 
@@ -101,6 +109,11 @@
       background-image: url(/images/disk2mobile.png);
       background-size: 100% 100%;
       height: 100vh;
+      position: 'absolute';
+      top: 0;
+      left: 0;
+      width: '100%';
+      height: '100%';
     }
   }
 
@@ -108,5 +121,10 @@
     .aboutMe__diskBack {
       background-image: url(/images/disk2.png);
       background-size: cover;
+      position: 'absolute';
+      top: 0;
+      left: 0;
+      width: '100%';
+      height: '100%';
     }
   }
