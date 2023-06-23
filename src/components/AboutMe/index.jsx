@@ -118,11 +118,11 @@ export const AboutMe = () => {
               </div>
               <div style={insideStyles}>
                 <div className="aboutMe__diskBack" style={{
-                        // position: 'absolute',
-                        // top: 0,
-                        // left: 0,
-                        // width: '100%',
-                        // height: '100%',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
                         // backgroundImage: ` ${
                         //   windowSize.width < 640
                         //     ? `url(/images/disk2mobile.png)`
@@ -143,6 +143,9 @@ export const AboutMe = () => {
                         // opacity:`${0.8 - (Math.pow( percentage, 2.2) - 1)}`,
                         filter:`blur(${Math.pow( percentage, 3.35) - 1}vw)`,
                       }}></div>
+
+                     {/* <img className="aboutMe__diskMobile" src={"/images/disk2mobile.png"}></img> */}
+          
 
                 <div
                   style={{
