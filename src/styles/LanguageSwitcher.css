@@ -17,6 +17,7 @@
 
 .languageFalse{
     background-color: rgba(0, 0, 255, 0);
+    color: rgb(16, 16, 16);
     font-weight: 000;
     font-size: 1.3vw;
     margin-right: 1vw;
@@ -41,11 +42,13 @@
     .languageTrue{
         font-size: min(4vw, 4em);
         margin-right: 2.5vw;
+        color: #fff;
     }
     
     .languageFalse{
         font-size: min(4vw, 4em);
         margin-right: 2.5vw;
+        color: rgb(16, 16, 16);
     }
     
 

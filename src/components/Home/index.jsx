@@ -102,7 +102,7 @@ const translations = {
                     // filter: `blur(${Math.pow(percentage, 2) - 1}vw)`,
                     filter: ` ${
                       windowSize.width < 640
-                        ? `blur(${Math.pow(percentage, 3.8) - 1}vw)`
+                        ? `blur(${Math.pow(percentage, 5) - 1}vw)`
                         : `blur(${Math.pow(percentage, 3.5) - 1}vw)`
                     }`,
                     userSelect: "none",
