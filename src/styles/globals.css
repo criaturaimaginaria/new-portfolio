@@ -113,3 +113,15 @@ html::-webkit-scrollbar-track {
   z-index: 5;
   height: 100vh;
 }
+
+
+@media (max-width: 640px) {
+  .Empty1__main{
+    position: relative;
+    z-index: 5;
+    height: 0vh;
+    width: 100%;
+    /* background-color: red; */
+  }
+  
+}
