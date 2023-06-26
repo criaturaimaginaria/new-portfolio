@@ -119,15 +119,10 @@ export const AboutMe = () => {
               <div style={insideStyles}>
                 <div className="aboutMe__diskBack" style={{
                         position: 'absolute',
-                        bottom: 0,
+                        top: 0,
                         left: 0,
                         width: '100%',
-                        // height: '100%',
-                        height: ` ${
-                          windowSize.width < 640
-                            ? `100vh`
-                            : `100%`
-                        }`,
+                        height: '100%',
                         backgroundAttachment: 'fixed',
                         backgroundRepeat: 'no-repeat',
                         // backgroundSize: ` ${
@@ -181,7 +176,7 @@ export const AboutMe = () => {
         <div
           // parallax scroll height
           style={
-            windowSize.width < 640 ? { height: "130vh", background:"#fff" } : { height: "240vh", background:"blue" }
+            windowSize.width < 640 ? { height: "0vh", background:"#fff" } : { height: "240vh", background:"blue" }
           }
         >
 

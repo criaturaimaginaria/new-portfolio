@@ -137,7 +137,7 @@ const translations = {
         <div
           // parallax scroll height
           style={
-            windowSize.width < 640 ? { height: "130vh" } : { height: "255vh" }
+            windowSize.width < 640 ? { height: "70vh" } : { height: "255vh" }
           }
         >
           {/* <div style={insideStyles}></div> */}
