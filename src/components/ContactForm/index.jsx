@@ -38,7 +38,7 @@ const translations = {
 
   return (
     <div id='contactForm'>
-      <form action="https://formsubmit.co/valkjavalkja2@gmail.com" method="POST">
+      <form action="https://formsubmit.co/valkjavalkja@gmail.com" method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
           <input type="hidden" name="_next" value="http://localhost:3000/ThankYou" ></input>
         <div >
