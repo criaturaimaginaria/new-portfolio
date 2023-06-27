@@ -185,6 +185,11 @@ input[type=number] {
         height: 65vh;
     }
 
+    form {
+        width: 75vw;
+        max-width: 75em;
+    }
+
 
     .inp1{
         height: 1.5em;

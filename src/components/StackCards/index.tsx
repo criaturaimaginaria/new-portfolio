@@ -126,6 +126,7 @@ export const StackCards = () => {
             img1:"/images/skills/nextjs.png",
             img2:"/images/skills/tailwind.png",
             img3:"/images/skills/css.png",
+            img4:"/images/skills/typescript.png",
           },
         },
 
@@ -186,6 +187,11 @@ export const StackCards = () => {
                                   {data.skills.img3 && (
                                     <div className='skills__imgContainer'>
                                       <img src={data.skills.img3} alt="Skill 3" />
+                                    </div>
+                                  )}
+                                  {data.skills.img4 && (
+                                    <div className='skills__imgContainer'>
+                                      <img src={data.skills.img4} alt="Skill 3" />
                                     </div>
                                   )}
                                 </div>
