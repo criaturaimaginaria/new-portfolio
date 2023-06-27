@@ -40,7 +40,7 @@ const translations = {
     <div id='contactForm'>
       <form action="https://formsubmit.co/valkjavalkja@gmail.com" method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name="_next" value="http://localhost:3000/ThankYou" ></input>
+          <input type="hidden" name="_next" value="https://personal-page-phi-seven.vercel.app/ThankYou" ></input>
         <div >
           <input className='inp1' id='ch' type="text" name="name"  placeholder={translations[language].name} required onChange={(e) => setInputValue(e.target.value)}></input>
         </div>
