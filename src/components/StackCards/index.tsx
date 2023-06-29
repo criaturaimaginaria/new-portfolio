@@ -99,7 +99,7 @@ export const StackCards = () => {
           title: 'Lightning store',  
           content: `${translations[language].description2}`, 
           img: "/images/projects/lightning.png",
-          link:"https://btc-lightning-store.web.app/",
+          link:"https://lightning-store.vercel.app/",
           skills:{
             img1:"/images/skills/react.png",
             img2:"/images/skills/node.png",
